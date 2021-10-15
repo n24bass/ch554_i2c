@@ -15,6 +15,8 @@ It uses these i2c devices.
 
 Default i2c pins (SCLK and SDAT) are P3_3 and P3_4. These GPIO ports can be defined by the symbol I2C_SCLK and I2C_SDAT. You'd initialize the ports to "open-drain output" and "pull-up", or prepare and external pull-up.
 
+<image src="https://user-images.githubusercontent.com/281339/137496513-e6f1b852-1fc4-419b-87c4-c80899f28e00.jpg" width="480"/>
+
 # References
 
 * [CH554 software development kit for SDCC](https://github.com/Blinkinlabs/ch554_sdcc)
