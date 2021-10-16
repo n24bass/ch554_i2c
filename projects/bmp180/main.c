@@ -46,22 +46,14 @@ void main() {
 
     t = get_temp();
     p = get_pressure();
-    // printf("main p=%d\r\n", (int)p);
     sprintf(buf, "%2d.%ddegC %4dhPa", t/10, t % 10, p);
 #if DEBUG
     printf("%s\r\n", buf);
 #endif
-    // lcdData(':');
-
     lcdSetCursor(15, 0);
-    // lcdSetCursor(15, 0);
     lcdData(LED? '*': ' ');
     lcdSetCursor(0, 1);
-    // lcdSetCursor(0, 1);
-    
-		// sprintf(buf, "%04d", i++);
-		lcdPrint(buf);
-		// i %= 1000;
+    lcdPrint(buf);
 
     mDelaymS(500);
   }
